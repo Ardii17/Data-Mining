@@ -3,6 +3,10 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+
 
 st.set_page_config(
     page_title="Prediksi Harga Rumah",

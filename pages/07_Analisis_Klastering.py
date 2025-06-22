@@ -6,6 +6,10 @@ import joblib
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.cluster import KMeans # Needed for KMeans
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+
 
 st.set_page_config(
     page_title="Analisis Klastering",
@@ -43,7 +47,6 @@ def load_and_cluster_data(file_path, preprocessor_path, kmeans_model_path):
 
     # Prepare X for clustering (dropping the target 'price_in_rp')
     X_clustering_features_raw = df_cluster_analysis.drop('price_in_rp', axis=1)
-
     # Load the preprocessor
     loaded_preprocessor = joblib.load(preprocessor_path)
     X_cluster_processed = loaded_preprocessor.transform(X_clustering_features_raw)
