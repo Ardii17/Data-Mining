@@ -20,7 +20,7 @@ st.write("""
 
 st.markdown("## Penjelasan Analisis Kami")
 st.write("""
-Aplikasi ini merupakan hasil proyek Data Mining yang bertujuan untuk memprediksi harga rumah
+Aplikasi ini merupakan hasil proyek kelompok kami untuk memenuhi tugas mata kuliah Data Mining yang bertujuan untuk memprediksi harga rumah
 di wilayah Jabodetabek dan melakukan analisis klastering pada data properti.
 Kami menggunakan berbagai teknik Machine Learning, mulai dari pemahaman data, pra-pemrosesan,
 hingga pembangunan dan evaluasi model.
